@@ -19,7 +19,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @app.route('/getpage', methods=['GET', 'POST'])
 @cross_origin()
 def root():
-    return render_template("page.html",message="hello from Flask")
+    return "Hello from flask"
 
 
 if __name__ == '__main__':
